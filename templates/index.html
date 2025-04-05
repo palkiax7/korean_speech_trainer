@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Korean AI Speech Trainer</title>
+</head>
+<body>
+    <h1>🎤 Speak: "안녕하세요"</h1>
+    <button onclick="startRecording()">Start</button>
+    <button onclick="stopRecording()">Stop & Upload</button>
+    <p><strong>Transcription:</strong> <span id="transcription"></span></p>
+    <p><strong>Accuracy:</strong> <span id="accuracy"></span>%</p>
+    <p><strong>Intonation Difference:</strong> <span id="pitch"></span></p>
+    <script src="{{ url_for('static', filename='js/recorder.js') }}"></script>
+</body>
+</html>
